@@ -11933,25 +11933,10 @@ textarea.form-control-lg {
   justify-content: center;
   padding: 1vw;
 }
-.icons-parts:icons-part:after {
-  position: absolute;
-  content: "";
-  left: 19rem;
-  top: 3rem;
-  width: 12rem;
-  border-bottom: 4px dotted #0d6efd;
-}
-.icons-parts:icons-part:before {
-  position: absolute;
-  content: "";
-  right: 19rem;
-  top: 3rem;
-  width: 12rem;
-  border-bottom: 4px dotted #0d6efd;
-}
 
 .bg-img2 {
   background-image: url(../img/fun-bg.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -12012,6 +11997,9 @@ textarea.form-control-lg {
 .sec9-cards {
   width: 100%;
 }
+.sec9-cards .col {
+  width: 30%;
+}
 
 .bg-img3 {
   background-image: url(../img/client-bg.jpg);
@@ -12022,7 +12010,7 @@ textarea.form-control-lg {
   padding: 8%;
 }
 .bg-img3 .bg-blue .sec10-imgs {
-  width: 8vw;
+  width: 10vw;
 }
 
 .sec11-textform {
@@ -12039,6 +12027,76 @@ textarea.form-control-lg {
 @media (max-width: 430px) {
   .nav-btn {
     width: 75% !important;
+  }
+  .sec2 h2, .sec2 .h2 {
+    width: 90%;
+  }
+  .sec2 p {
+    width: 90%;
+  }
+  .icons {
+    flex-direction: column;
+  }
+  .icons::after {
+    width: 0rem;
+  }
+  .icons::before {
+    width: 0rem;
+  }
+  .icons .icon-border {
+    font-size: 10vw;
+  }
+  .icon2-border i {
+    font-size: 10vw;
+  }
+  .sec4-title {
+    width: 85%;
+  }
+  .sec4-para {
+    width: 85%;
+  }
+  .sec6-title {
+    width: 85%;
+  }
+  .sec6-para {
+    width: 85%;
+  }
+  .sec7-row {
+    width: 100% !important;
+  }
+  .sec7-row i {
+    font-size: 12vw;
+  }
+  .sec8-cards {
+    width: 80vw;
+  }
+  .sec8-cards i {
+    font-size: 12vw !important;
+  }
+  .sec8-cards a {
+    width: 90%;
+  }
+  .sec8-cards b {
+    font-size: 10vw !important;
+  }
+  .sec9-cards .col {
+    width: 100%;
+  }
+  .sec10-imgs {
+    width: 65% !important;
+  }
+  .sec11-inputs {
+    width: 195% !important;
+  }
+  .sec11-textform {
+    width: 195%;
+  }
+  .sec11-textform button {
+    width: 50%;
+    padding: 1vh;
+  }
+  .sec11-img img {
+    width: 100vw;
   }
 }
 

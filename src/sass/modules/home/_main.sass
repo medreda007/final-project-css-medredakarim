@@ -59,23 +59,10 @@
     align-items: center
     justify-content: center
     padding: 1vw
-    &:icons-part:after
-        position: absolute
-        content: ""
-        left: 19rem
-        top: 3rem
-        width: 12rem
-        border-bottom: 4px dotted $blue
-    &:icons-part:before
-        position: absolute
-        content: ""
-        right: 19rem
-        top: 3rem
-        width: 12rem
-        border-bottom: 4px dotted $blue
 // section 3
 .bg-img2
     background-image: url(../img/fun-bg.jpg)
+    background-attachment: fixed
     background-repeat: no-repeat
     background-size: cover
     .bg-blue
@@ -127,7 +114,8 @@
     // section 9
 .sec9-cards
     width: 100%
-        
+    .col
+        width: 30%
 
     // section 10
 .bg-img3
@@ -137,9 +125,7 @@
     .bg-blue
         padding: 8%
         .sec10-imgs
-            width: 8vw
-            
-        
+            width: 10vw
     // section 11 
 .sec11-textform
     width: 100%
@@ -151,5 +137,74 @@
     padding: 7%
 
 @media (max-width: 430px)
+    // nav bar 
     .nav-btn
         width: 75% !important
+    // section 1
+    
+    
+    // section 2
+    .sec2
+        h2
+            width: 90%
+        p
+            width: 90%
+    .icons
+        flex-direction: column
+        &::after
+            width:0rem
+        &::before
+            width: 0rem
+        .icon-border
+            font-size: 10vw
+
+    // section 3
+    .icon2-border
+        i
+            font-size: 10vw
+    // section 4
+    .sec4-title
+        width: 85%
+    .sec4-para
+        width: 85%
+    // section 5
+
+
+    // section 6
+    .sec6-title
+        width: 85%
+    .sec6-para
+        width: 85%
+    // section 7
+    .sec7-row
+        width: 100% !important
+        i
+            font-size: 12vw
+    // section 8
+    .sec8-cards
+        width: 80vw 
+        i
+            font-size: 12vw !important
+        a
+            width: 90%
+        b
+            font-size: 10vw !important
+    // section 9
+    .sec9-cards
+        .col
+            width: 100%
+    // section 10
+    .sec10-imgs
+        width: 65% !important
+    // section 11
+    .sec11-inputs
+        width: 195% !important
+    .sec11-textform
+        width: 195% 
+        button
+            width: 50%
+            padding: 1vh
+    .sec11-img img
+        width: 100vw
+    // section 12
+
