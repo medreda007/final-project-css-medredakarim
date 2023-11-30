@@ -11936,7 +11936,6 @@ textarea.form-control-lg {
 
 .bg-img2 {
   background-image: url(../img/fun-bg.jpg);
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11962,17 +11961,20 @@ textarea.form-control-lg {
   width: 35%;
 }
 
-.emerSec {
-  height: 40vh;
-  background-color: blue;
-  padding: 20px 0;
+.sec5-bg-img {
+  background-image: url(../img/call-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
-
-.botona {
-  padding: 10px;
-  border: 1px solid white;
-  text-decoration: none;
-  color: inherit;
+.sec5-bg-img .bg-blue {
+  padding: 6%;
+}
+.sec5-bg-img h2, .sec5-bg-img .h2 {
+  width: 35%;
+}
+.sec5-bg-img p {
+  width: 35%;
 }
 
 .sec6-title {
@@ -12055,6 +12057,12 @@ textarea.form-control-lg {
   .sec4-para {
     width: 85%;
   }
+  .sec5-bg-img h2, .sec5-bg-img .h2 {
+    width: 100%;
+  }
+  .sec5-bg-img p {
+    width: 100%;
+  }
   .sec6-title {
     width: 85%;
   }
@@ -12097,6 +12105,25 @@ textarea.form-control-lg {
   }
   .sec11-img img {
     width: 100vw;
+  }
+  .sec12-inputs {
+    width: 100% !important;
+  }
+  .email-input {
+    width: 100% !important;
+  }
+  .btn-sec12 {
+    width: 100% !important;
+    padding: 1vh;
+  }
+  .footer-para {
+    width: 100% !important;
+  }
+  .footer-para p {
+    width: 100% !important;
+  }
+  .footer-timing {
+    width: 100%;
   }
 }
 
