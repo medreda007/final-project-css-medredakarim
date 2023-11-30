@@ -3,6 +3,14 @@
     height: 90vh
     background-image: url(../img/slider.jpg)
     background-size: cover
+.img2
+    height: 90vh
+    background-image: url(../img/slider2.jpg)
+    background-size: cover
+.img3
+    height: 90vh
+    background-image: url(../img/slider3.jpg)
+    background-size: cover
 .paragraph1
     width: 50% !important
 // section 2
@@ -20,6 +28,21 @@
     display: flex
     justify-content: space-around
     padding: 5%
+    position: relative 
+    &::after
+        position: absolute
+        content: ""
+        left: 27rem
+        top: 8rem
+        width: 12rem
+        border-bottom: 4px dotted $blue
+    &::before
+        position: absolute
+        content: ""
+        right: 27rem
+        top: 8rem
+        width: 12rem
+        border-bottom: 4px dotted $blue
     .icon-border
         display: flex
         justify-content: center
@@ -36,19 +59,32 @@
     align-items: center
     justify-content: center
     padding: 1vw
+    &:icons-part:after
+        position: absolute
+        content: ""
+        left: 19rem
+        top: 3rem
+        width: 12rem
+        border-bottom: 4px dotted $blue
+    &:icons-part:before
+        position: absolute
+        content: ""
+        right: 19rem
+        top: 3rem
+        width: 12rem
+        border-bottom: 4px dotted $blue
 // section 3
 .bg-img2
     background-image: url(../img/fun-bg.jpg)
-    height: 40vh
     background-repeat: no-repeat
     background-size: cover
     .bg-blue
-        height: 40vh
+        padding: 8%
     .icon2-border
         display: flex
         justify-content: center
         align-items: center
-        border: solid 1px grey
+        border: solid 2px white
         border-radius: 50%
         width: 100px
         height: 100px
@@ -67,15 +103,11 @@
     height: 40vh
     background-color: blue
     padding: 20px 0
-
-    
-    
 .botona 
     padding: 10px
     border: 1px solid white
     text-decoration: none
     color: inherit    
-
 
     // section 6
 .sec6-title
@@ -83,9 +115,41 @@
 .sec6-para
     width: 35%
 
+    // section 8
+.sec8-cards
+    padding: 3%
+    padding-top: 1%
+    i
+        font-size: 4vw !important
+    a
+        width: 150%
+
+    // section 9
+.sec9-cards
+    width: 100%
         
 
-    
-    
+    // section 10
+.bg-img3
+    background-image: url(../img/client-bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    .bg-blue
+        padding: 8%
+        .sec10-imgs
+            width: 8vw
             
         
+    // section 11 
+.sec11-textform
+    width: 100%
+    textarea
+        padding-bottom: 29%
+
+    // section 12
+.sec12-bg
+    padding: 7%
+
+@media (max-width: 430px)
+    .nav-btn
+        width: 75% !important
