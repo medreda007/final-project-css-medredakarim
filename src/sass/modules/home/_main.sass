@@ -129,28 +129,53 @@
     p
         width: 35%
     // section 6
-.sec6-title
-    width: 35%
-.sec6-para
-    width: 35%
-
+.image1
+    width: 18rem
+    height: 14rem
+    position: relative
+    img
+        width: 100%
+        height: 100%
+        display: block
+    div
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        position: absolute
+        background-color: $blue
+        display: flex
+        justify-content: center
+        align-items: center
+        opacity: 0
+        transition: 1s
+        &:hover
+            opacity: 70%
+        button
+            width: 8rem
+            height: 3rem
     // section 8
 .sec8-cards
     padding: 3%
     padding-top: 1%
-    i
+    .i1
         font-size: 4vw !important
     a
         width: 150%
+.sec8-icon
+    font-size: 2px !important
 
     // section 9
 .sec9-cards
     width: 100%
     padding-bottom: 8%
-    .card
-        box-shadow: 2px 1px 2px lightgrey
     .col
         width: 30%
+        .card
+            box-shadow: 2px 1px 2px lightgrey
+.card-ticket
+    width: 30%
+    
 
     // section 10
 .bg-img3
@@ -170,7 +195,8 @@
     // section 12
 .sec12-bg
     padding: 7%
-
+.chi7aja
+    font-size: 10px !important
 @media (max-width: 430px)    
     // nav bar 
     .nav-btn
@@ -237,6 +263,11 @@
         p
             width: 100%
     // section 6
+    .div1
+        h1
+            width: 150%
+        p
+            width: 150%
     .sec6-title
         width: 85%
     .sec6-para
@@ -251,7 +282,7 @@
         padding-left: 10% !important
     .sec8-cards
         width: 80vw
-        i
+        .i1
             font-size: 12vw !important
         a
             width: 90%
@@ -262,6 +293,8 @@
         padding-left: 5%
         .col
             width: 100%
+            .card-ticket
+                width: 40%
     // section 10
     .sec10-imgs
         width: 65% !important

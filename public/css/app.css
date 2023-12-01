@@ -12010,33 +12010,64 @@ textarea.form-control-lg {
   width: 35%;
 }
 
-.sec6-title {
-  width: 35%;
+.image1 {
+  width: 18rem;
+  height: 14rem;
+  position: relative;
 }
-
-.sec6-para {
-  width: 35%;
+.image1 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.image1 div {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #0d6efd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 1s;
+}
+.image1 div:hover {
+  opacity: 70%;
+}
+.image1 div button {
+  width: 8rem;
+  height: 3rem;
 }
 
 .sec8-cards {
   padding: 3%;
   padding-top: 1%;
 }
-.sec8-cards i {
+.sec8-cards .i1 {
   font-size: 4vw !important;
 }
 .sec8-cards a {
   width: 150%;
 }
 
+.sec8-icon {
+  font-size: 2px !important;
+}
+
 .sec9-cards {
   width: 100%;
   padding-bottom: 8%;
 }
-.sec9-cards .card {
+.sec9-cards .col {
+  width: 30%;
+}
+.sec9-cards .col .card {
   box-shadow: 2px 1px 2px lightgrey;
 }
-.sec9-cards .col {
+
+.card-ticket {
   width: 30%;
 }
 
@@ -12061,6 +12092,10 @@ textarea.form-control-lg {
 
 .sec12-bg {
   padding: 7%;
+}
+
+.chi7aja {
+  font-size: 10px !important;
 }
 
 @media (max-width: 430px) {
@@ -12145,6 +12180,12 @@ textarea.form-control-lg {
   .sec5-bg-img p {
     width: 100%;
   }
+  .div1 h1, .div1 .h1 {
+    width: 150%;
+  }
+  .div1 p {
+    width: 150%;
+  }
   .sec6-title {
     width: 85%;
   }
@@ -12163,7 +12204,7 @@ textarea.form-control-lg {
   .sec8-cards {
     width: 80vw;
   }
-  .sec8-cards i {
+  .sec8-cards .i1 {
     font-size: 12vw !important;
   }
   .sec8-cards a {
@@ -12177,6 +12218,9 @@ textarea.form-control-lg {
   }
   .sec9-cards .col {
     width: 100%;
+  }
+  .sec9-cards .col .card-ticket {
+    width: 40%;
   }
   .sec10-imgs {
     width: 65% !important;
