@@ -1,16 +1,66 @@
-// section 1
+.h-uderline
+    position: relative
+    &::before
+
+        content: ""
+        height: 6px
+        width: 0
+        background: blue
+        position: absolute
+        left: 0
+        bottom: -15px
+        transition: all 0.5s
+        pointer-events: none
+    &:hover
+        &::before
+            width: 100%
+
+    // btn-hover
+.caro-btn
+    background-image: linear-gradient(#363636, #363636)
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: 0% 100%
+    transition: background-size .5s, color .5s
+.caro-btn:hover
+    background-size: 100% 100%
+    color: #fff
+
+// .caro-btn
+//     position: relative
+//     transition: 1s
+//     z-index: 
+//     &::before
+//         border-radius: .5rem
+//         background: #00000042
+//         content: ""
+//         width: 0%
+//         height: 100%
+//         position: absolute
+//         top: 50%
+//         left: 50%
+//         transform: translate(-50%,-50%)
+//         transition: 0.6s
+//     &:hover
+//         &::before
+//             width: 100%
+
+    // section 1
 .img1
     height: 90vh
     background-image: url(../img/slider.jpg)
     background-size: cover
+    background-repeat: no-repeat
 .img2
     height: 90vh
     background-image: url(../img/slider2.jpg)
     background-size: cover
+    background-repeat: no-repeat
 .img3
     height: 90vh
     background-image: url(../img/slider3.jpg)
     background-size: cover
+    background-repeat: no-repeat
 .paragraph1
     width: 50% !important
 // section 2
@@ -28,7 +78,7 @@
     display: flex
     justify-content: space-around
     padding: 5%
-    position: relative 
+    position: relative
     &::after
         position: absolute
         content: ""
@@ -94,16 +144,6 @@
         width: 35%
     p
         width: 35%
-// .emerSec
-//     height: 40vh
-//     background-color: blue
-//     padding: 20px 0
-// .botona 
-//     padding: 10px
-//     border: 1px solid white
-//     text-decoration: none
-//     color: inherit    
-
     // section 6
 .sec6-title
     width: 35%
@@ -149,8 +189,25 @@
     .nav-btn
         width: 75% !important
     // section 1
-    
-    
+    .img1
+        height: 100%
+        background-size: contain
+        .paragraph1
+            width: 130% !important
+        .caro-btn
+            width: 120% !important
+    .img2
+        height: 60vh
+        .paragraph1
+            width: 130% !important
+        .caro-btn
+            width: 120% !important
+    .img3
+        height: 60vh
+        .paragraph1
+            width: 130% !important
+        .caro-btn
+            width: 120% !important
     // section 2
     .sec2
         h2
@@ -160,7 +217,7 @@
     .icons
         flex-direction: column
         &::after
-            width:0rem
+            width: 0rem
         &::before
             width: 0rem
         .icon-border
@@ -194,7 +251,7 @@
             font-size: 12vw
     // section 8
     .sec8-cards
-        width: 80vw 
+        width: 80vw
         i
             font-size: 12vw !important
         a
@@ -212,7 +269,7 @@
     .sec11-inputs
         width: 195% !important
     .sec11-textform
-        width: 195% 
+        width: 195%
         button
             width: 50%
             padding: 1vh
@@ -233,4 +290,3 @@
             width: 100% !important
     .footer-timing
         width: 100%
-

@@ -11856,22 +11856,56 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.h-uderline {
+  position: relative;
+}
+.h-uderline::before {
+  content: "";
+  height: 6px;
+  width: 0;
+  background: blue;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  transition: all 0.5s;
+  pointer-events: none;
+}
+.h-uderline:hover::before {
+  width: 100%;
+}
+
+.caro-btn {
+  background-image: linear-gradient(#363636, #363636);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s, color 0.5s;
+}
+
+.caro-btn:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
+
 .img1 {
   height: 90vh;
   background-image: url(../img/slider.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .img2 {
   height: 90vh;
   background-image: url(../img/slider2.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .img3 {
   height: 90vh;
   background-image: url(../img/slider3.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .paragraph1 {
@@ -12029,6 +12063,34 @@ textarea.form-control-lg {
 @media (max-width: 430px) {
   .nav-btn {
     width: 75% !important;
+  }
+  .img1 {
+    height: 100%;
+    background-size: contain;
+  }
+  .img1 .paragraph1 {
+    width: 130% !important;
+  }
+  .img1 .caro-btn {
+    width: 120% !important;
+  }
+  .img2 {
+    height: 60vh;
+  }
+  .img2 .paragraph1 {
+    width: 130% !important;
+  }
+  .img2 .caro-btn {
+    width: 120% !important;
+  }
+  .img3 {
+    height: 60vh;
+  }
+  .img3 .paragraph1 {
+    width: 130% !important;
+  }
+  .img3 .caro-btn {
+    width: 120% !important;
   }
   .sec2 h2, .sec2 .h2 {
     width: 90%;
