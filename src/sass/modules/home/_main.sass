@@ -161,6 +161,9 @@
     // section 9
 .sec9-cards
     width: 100%
+    padding-bottom: 8%
+    .card
+        box-shadow: 2px 1px 2px lightgrey
     .col
         width: 30%
 
@@ -184,20 +187,21 @@
     padding: 7%
 
 @media (max-width: 430px)
+    .h-uderline 
+        &::before
+        &:hover
+            &::before
+                display: none
+    .h-btn
+        &:hover
+            display: none
     // nav bar 
     .nav-btn
-        width: 75% !important
-    .carousel-control-prev-icon
         display: none
-    .carousel-control-next-icon
-        display: none
-    .caro-btn
-        width: 100%
         // section 1
-
     .img1
         height: 60vh
-        padding-top: 15%
+        padding-top: 20%
         padding-left: 5%
         .paragraph1
             width: 130% !important
@@ -205,7 +209,7 @@
             width: 120% !important
     .img2
         height: 60vh
-        padding-top: 15%
+        padding-top: 20%
         padding-left: 5%
         .paragraph1
             width: 130% !important
@@ -213,14 +217,21 @@
             width: 120% !important
     .img3
         height: 60vh
-        padding-top: 15%
+        padding-top: 20%
         padding-left: 5%
         .paragraph1
             width: 130% !important
         .caro-btn
             width: 120% !important
+    .carousel-control-prev-icon
+        display: none
+    .carousel-control-next-icon
+        display: none
+    .caro-btn
+        width: 100%
     // section 2
     .sec2
+        padding-top: 10%
         h2
             width: 90%
         p
@@ -233,7 +244,6 @@
             width: 0rem
         .icon-border
             font-size: 10vw
-
     // section 3
     .icon2-border
         i
@@ -261,6 +271,8 @@
         i
             font-size: 12vw
     // section 8
+    .sec8-all-cards
+        padding-left: 10% !important
     .sec8-cards
         width: 80vw
         i
@@ -271,6 +283,7 @@
             font-size: 10vw !important
     // section 9
     .sec9-cards
+        padding-left: 5%
         .col
             width: 100%
     // section 10

@@ -12032,6 +12032,10 @@ textarea.form-control-lg {
 
 .sec9-cards {
   width: 100%;
+  padding-bottom: 8%;
+}
+.sec9-cards .card {
+  box-shadow: 2px 1px 2px lightgrey;
 }
 .sec9-cards .col {
   width: 30%;
@@ -12061,21 +12065,18 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 430px) {
+  .h-uderline:hover::before {
+    display: none;
+  }
+  .h-btn:hover {
+    display: none;
+  }
   .nav-btn {
-    width: 75% !important;
-  }
-  .carousel-control-prev-icon {
     display: none;
-  }
-  .carousel-control-next-icon {
-    display: none;
-  }
-  .caro-btn {
-    width: 100%;
   }
   .img1 {
     height: 60vh;
-    padding-top: 15%;
+    padding-top: 20%;
     padding-left: 5%;
   }
   .img1 .paragraph1 {
@@ -12086,7 +12087,7 @@ textarea.form-control-lg {
   }
   .img2 {
     height: 60vh;
-    padding-top: 15%;
+    padding-top: 20%;
     padding-left: 5%;
   }
   .img2 .paragraph1 {
@@ -12097,7 +12098,7 @@ textarea.form-control-lg {
   }
   .img3 {
     height: 60vh;
-    padding-top: 15%;
+    padding-top: 20%;
     padding-left: 5%;
   }
   .img3 .paragraph1 {
@@ -12105,6 +12106,18 @@ textarea.form-control-lg {
   }
   .img3 .caro-btn {
     width: 120% !important;
+  }
+  .carousel-control-prev-icon {
+    display: none;
+  }
+  .carousel-control-next-icon {
+    display: none;
+  }
+  .caro-btn {
+    width: 100%;
+  }
+  .sec2 {
+    padding-top: 10%;
   }
   .sec2 h2, .sec2 .h2 {
     width: 90%;
@@ -12151,6 +12164,9 @@ textarea.form-control-lg {
   .sec7-row i {
     font-size: 12vw;
   }
+  .sec8-all-cards {
+    padding-left: 10% !important;
+  }
   .sec8-cards {
     width: 80vw;
   }
@@ -12162,6 +12178,9 @@ textarea.form-control-lg {
   }
   .sec8-cards b {
     font-size: 10vw !important;
+  }
+  .sec9-cards {
+    padding-left: 5%;
   }
   .sec9-cards .col {
     width: 100%;
