@@ -1,48 +1,33 @@
-.h-uderline
-    position: relative
-    &::before
-        content: ""
-        height: 3px
-        width: 0
-        background: blue
-        position: absolute
-        left: 0
-        bottom: -15px
-        transition: all 0.5s
-        pointer-events: none
-    &:hover
+// btns hover
+@media screen and ( min-width: 500px )
+    .h-uderline
+        position: relative
         &::before
-            width: 100%
+            content: ""
+            height: 3px
+            width: 0
+            background: blue
+            position: absolute
+            left: 0
+            bottom: -15px
+            transition: all 0.5s
+            pointer-events: none
+        &:hover
+            &::before
+                width: 100%
+    .h-btn
+        background-image: linear-gradient(#363636, #363636)
+        background-position: 50% 50%
+        background-repeat: no-repeat
+        background-size: 0% 100%
+        transition: background-size .5s, color .5s
+    .h-btn:hover
+        background-size: 100% 100%
+        color: #fff
 
-    // btn-hover
-.h-btn
-    background-image: linear-gradient(#363636, #363636)
-    background-position: 50% 50%
-    background-repeat: no-repeat
-    background-size: 0% 100%
-    transition: background-size .5s, color .5s
-.h-btn:hover
-    background-size: 100% 100%
-    color: #fff
 
-// .caro-btn
-//     position: relative
-//     transition: 1s
-//     z-index: 
-//     &::before
-//         border-radius: .5rem
-//         background: #00000042
-//         content: ""
-//         width: 0%
-//         height: 100%
-//         position: absolute
-//         top: 50%
-//         left: 50%
-//         transform: translate(-50%,-50%)
-//         transition: 0.6s
-//     &:hover
-//         &::before
-//             width: 100%
+
+
 
     // section 1
 .img1
@@ -186,15 +171,7 @@
 .sec12-bg
     padding: 7%
 
-@media (max-width: 430px)
-    .h-uderline 
-        &::before
-        &:hover
-            &::before
-                display: none
-    .h-btn
-        &:hover
-            display: none
+@media (max-width: 430px)    
     // nav bar 
     .nav-btn
         display: none
@@ -259,7 +236,6 @@
             width: 100%
         p
             width: 100%
-
     // section 6
     .sec6-title
         width: 85%
