@@ -1,9 +1,8 @@
 .h-uderline
     position: relative
     &::before
-
         content: ""
-        height: 6px
+        height: 3px
         width: 0
         background: blue
         position: absolute
@@ -16,13 +15,13 @@
             width: 100%
 
     // btn-hover
-.caro-btn
+.h-btn
     background-image: linear-gradient(#363636, #363636)
     background-position: 50% 50%
     background-repeat: no-repeat
     background-size: 0% 100%
     transition: background-size .5s, color .5s
-.caro-btn:hover
+.h-btn:hover
     background-size: 100% 100%
     color: #fff
 
@@ -188,22 +187,34 @@
     // nav bar 
     .nav-btn
         width: 75% !important
-    // section 1
+    .carousel-control-prev-icon
+        display: none
+    .carousel-control-next-icon
+        display: none
+    .caro-btn
+        width: 100%
+        // section 1
+
     .img1
-        height: 100%
-        background-size: contain
+        height: 60vh
+        padding-top: 15%
+        padding-left: 5%
         .paragraph1
             width: 130% !important
         .caro-btn
             width: 120% !important
     .img2
         height: 60vh
+        padding-top: 15%
+        padding-left: 5%
         .paragraph1
             width: 130% !important
         .caro-btn
             width: 120% !important
     .img3
         height: 60vh
+        padding-top: 15%
+        padding-left: 5%
         .paragraph1
             width: 130% !important
         .caro-btn
